@@ -8,7 +8,7 @@ function toggleOpen () {
 function transitionEnd (e) {
   if (e.propertyName.includes('flex')) {
     // e.target.classList.toggle('is-open-active');
-  this.classList.toggle('is-open-active');
+    this.classList.toggle('is-open-active');
   }
 
   this.classList.toggle('is-open-active');
