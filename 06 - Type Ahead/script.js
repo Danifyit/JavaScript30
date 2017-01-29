@@ -15,10 +15,10 @@ function findMatches (wordToMach, cities) {
 }
 function displayMatches () {
   const matchArray = findMatches(this.value, cities);
-  const html = matchArray.map(place => {    
+  const html = matchArray.map(place => {
     const regex = new RegExp(this.value, 'gi');
 
-    //higlightar sökt ord. Byter ut regex-matching mot span med class
+    // higlightar sökt ord. Byter ut regex-matching mot span med class
     const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
     const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);
 
